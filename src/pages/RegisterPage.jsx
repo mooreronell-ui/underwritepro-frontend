@@ -13,7 +13,7 @@ export default function RegisterPage() {
     email: '',
     password: '',
     full_name: '',
-    company_name: '',
+    organization_name: '',
   });
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -87,13 +87,13 @@ export default function RegisterPage() {
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="company_name">Company Name</Label>
+                <Label htmlFor="organization_name">Company Name</Label>
                 <Input
-                  id="company_name"
-                  name="company_name"
+                  id="organization_name"
+                  name="organization_name"
                   type="text"
                   placeholder="Your Company LLC"
-                  value={formData.company_name}
+                  value={formData.organization_name}
                   onChange={handleChange}
                   required
                   className="h-11"
